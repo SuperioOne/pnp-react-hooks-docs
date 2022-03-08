@@ -15,6 +15,16 @@ const config = {
   organizationName: 'SuperioOne', // Usually your GitHub org/user name.
   projectName: 'pnp-react-hooks', // Usually your repo name.
 
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        indexDocs: true,
+        indexBlog: false,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -43,7 +53,7 @@ const config = {
       navbar: {
         title: 'PnP React Hooks',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'PnP React Hooks Logo',
           src: 'img/logo.svg',
         },
         items: [
