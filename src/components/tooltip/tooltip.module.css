@@ -1,0 +1,37 @@
+.tooltip {
+    position: absolute;
+    display: inline-block;
+    cursor:pointer;
+}
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: rgb(235, 235, 235);
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    top: -5px;
+    left: 105%;
+    cursor: default;
+    margin-left: 10px;
+    min-width: 350px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip .tooltiptext::before {
+    content: " ";
+    position: absolute;
+    top:40%;
+    right: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent rgba(0, 0, 0, 0.70) transparent transparent ;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
