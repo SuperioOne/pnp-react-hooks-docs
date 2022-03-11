@@ -7,13 +7,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'PnP React Hooks',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://superioone.github.io/pnp-react-hooks',
+  baseUrl: '/pnp-react-hooks/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'SuperioOne', // Usually your GitHub org/user name.
-  projectName: 'pnp-react-hooks', // Usually your repo name.
+  projectName: 'pnp-react-hooks', // Usually your repo name.,
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   plugins: [
     [
@@ -83,11 +85,11 @@ const config = {
               },
               {
                 label: 'Configuration',
-                to: '/docs/Getting Started/Configuration',
+                to: '/Configuration',
               },
               {
                 label: 'API',
-                to: '/docs/API',
+                to: '/API',
               },
             ],
           },
@@ -101,7 +103,7 @@ const config = {
               },
               {
                 label: 'Examples',
-                href: '/docs/Examples',
+                href: '/ExampleComponents',
               },
               {
                 label: 'GitHub',
@@ -110,7 +112,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} PnP React Hooks, Built with Docusaurus.`,
+        copyright: `Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
