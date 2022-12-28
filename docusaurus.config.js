@@ -1,13 +1,12 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const codeTheme = require('prism-react-renderer/themes/vsDark');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'PnP React Hooks',
-  url: 'https://superioone.github.io/pnp-react-hooks',
+  url: 'https://superioone.github.io',
   baseUrl: '/pnp-react-hooks/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -35,12 +34,12 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          path: "pnp-react-hooks/docs",
+          path: "docs",
         },
         blog: {
           showReadingTime: false,
           routeBasePath: "changelog",
-          path: "changelog"
+          path: "changelog",
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -52,6 +51,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: 'PnP React Hooks',
         logo: {
@@ -74,7 +78,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
             title: 'Docs',
@@ -93,7 +97,6 @@ const config = {
               },
             ],
           },
-
           {
             title: 'More',
             items: [
@@ -115,8 +118,7 @@ const config = {
         copyright: `Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: codeTheme,
       },
     }),
 };
