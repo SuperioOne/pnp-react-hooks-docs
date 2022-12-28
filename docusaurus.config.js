@@ -88,12 +88,16 @@ const config = {
                 to: '/',
               },
               {
-                label: 'Configuration',
-                to: '/Configuration',
+                label: 'Getting Started',
+                to: '/GettingStarted',
               },
               {
                 label: 'API',
                 to: '/API',
+              },
+              {
+                label: 'Advanced',
+                to: '/Advanced',
               },
             ],
           },
