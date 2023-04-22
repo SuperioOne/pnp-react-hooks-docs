@@ -68,6 +68,14 @@ OData query. <ToolTip text="Any meaningful change refreshes response data.">🚩
 
 ___
 
+### scope
+
+• `Optional` **scope**: `"sitecollection"` | `"tenant"`
+
+App catalog scope configuration. Default is `"sitecollection"`. <ToolTip text="Changing scope values refreshes response data.">🚩</ToolTip>
+
+___
+
 ### sp
 
 • `Optional` **sp**: `SPFI`

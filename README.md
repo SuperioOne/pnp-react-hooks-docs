@@ -5,13 +5,13 @@ Documentation site for [pnp-react-hooks](https://github.com/SuperioOne/pnp-react
 ## Installation
 
 ```shell
-$ npm install
+$ pnpm install
 ```
 
 ## Local Development
 
 ```shell
-$ npm start
+$ pnpm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -19,7 +19,7 @@ This command starts a local development server and opens up a browser window. Mo
 ## Build
 
 ```shell
-$ npm build
+$ pnpm build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
@@ -30,12 +30,12 @@ Using SSH:
 
 ```shell
 $ USE_SSH=true
-$ npm deploy
+$ pnpm deploy
 ```
 
 Not using SSH:
 
 ```shell
 $ GIT_USER=<Your GitHub username>
-$ npm deploy
+$ pnpm deploy
 ```

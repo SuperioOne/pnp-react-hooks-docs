@@ -5,9 +5,13 @@ title: Introduction
 slug: /
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 # PnP React Hooks
 
-PnP React Hooks is a wrapper library for [PnPjs](https://pnp.github.io/pnpjs/), providing configurable React hooks for Sharepoint Rest API.
+PnP React Hooks is a wrapper library for [PnPjs](https://pnp.github.io/pnpjs/), provides configurable React hooks for SharePoint Rest API.
 
 **Example usage:**
 
@@ -36,27 +40,49 @@ export const ExampleComponent = () =>
 
 ## Installation
 
-### Npm  v7+
+<Tabs>
+<TabItem value="npmv7" label="npm v7+" default>
+
+Peer dependencies are automatically installed by npm.
 
 ```shell
 npm install pnp-react-hooks
 ```
 
-### Npm v3-6
+</TabItem>
+<TabItem value="npmv3" label="npm v3-6">
 
-You have to install peer dependencies manually when using older npm versions.
+
 
 ```shell
-npm install pnp-react-hooks @pnp/sp react
+npm install pnp-react-hooks @pnp/sp react@17.0.2
 ```
+
+</TabItem>
+<TabItem value="pnpm" label="pnpm">
+
+```shell
+pnpm install pnp-react-hooks @pnp/sp react@17.0.2
+```
+
+</TabItem>
+
+<TabItem value="yarn" label="yarn">
+
+```shell
+yarn add pnp-react-hooks @pnp/sp react@17.0.2
+```
+
+</TabItem>
+</Tabs>
 
 ## Features
 
-- Quickly build simple web parts with less code.
-- Written in TypeScript. No additional type package required.
+- Build simple web parts quickly with less code.
+- Written in TypeScript, no additional type package required.
 - Automatically tracks parameter changes and refreshes data as needed.
-- Easy to treeshake unused code with modern Js bundlers.
-- Can be configured for multiple sites with option provider.
+- Easy to treeshake unused code with modern JS bundlers.
+- Can be configured for multiple sites with an option provider.
 - Supports [PnPjs V3 behaviors](https://pnp.github.io/pnpjs/core/behaviors/).
 
 ## Questions and Suggestions

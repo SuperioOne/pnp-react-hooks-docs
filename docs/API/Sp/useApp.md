@@ -29,13 +29,22 @@ App info object.
 ## Examples
 
 ```typescript
-// basic usage
+// Get app from site collection app catalog
 const app = useApp("5ee53613-bc0f-4b2a-9904-b21afd8431a7");
 
-// with query
+// Get app from site collection app catalog with query.
 const appWithQuery = useApp("5ee53613-bc0f-4b2a-9904-b21afd8431a7", {
 	query: {
 		select: ["Title", "Id", "IsEnabled"]
 	}
+
+// Get app from tenant app catalog.
+const tenantApp = useApp("5ee53613-bc0f-4b2a-9904-b21afd8431a7", {
+  scope: "tenant"
+});
+
+// Set scope to site collection explicitly. Same as `scope: undefined`
+const tenantApp = useApp("5ee53613-bc0f-4b2a-9904-b21afd8431a7", {
+  scope: "sitecollection"
 });
 ```

@@ -26,11 +26,21 @@ App info array.
 ## Examples
 
 ```typescript
-// basic usage
+// Get apps from site collection app catalog
 const apps = useApps();
 
-// with query
-const filteredApps = useApp({
+// Get apps from tenant app catalog
+const apps = useApps({
+	scope: "tenant"
+});
+
+// Set scope to site collection explicitly
+const apps = useApps({
+	scope: "sitecollection"
+});
+
+// Get apps from site collection app catalog with query
+const filteredApps = useApps({
 	query: {
 		select: ["Title", "Id", "IsEnabled"],
 		filter: "IsEnabled eq true"
